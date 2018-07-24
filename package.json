@@ -1,0 +1,28 @@
+{
+  "name": "parcel-starter",
+  "version": "1.0.0",
+  "description": "basic boilerplate to develop web applications with parceljs",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.9.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.2",
+    "shx": "^0.3.2",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "pre-build": "shx rm -rf dist/*",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "author": "Amit Bhavikatti",
+  "license": "MIT"
+}
